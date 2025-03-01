@@ -1,0 +1,165 @@
+/* General Variables */
+:root {
+  --secondary-bg: #080505;
+  --text-color: white;
+  --hover-color: #00265a;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --transition-speed: 0.4s ease;
+}
+
+/* Background Utility Classes */
+.bg-primary {
+  background-color: #040404; /* Previously --primary-bg */
+}
+
+.bg-secondary {
+  background-color: var(--secondary-bg);
+}
+
+.bg-hover {
+  background-color: var(--hover-color);
+}
+
+/* Text Utility Classes */
+.text-primary {
+  color: #040404; /* Matches primary background */
+}
+
+.text-secondary {
+  color: var(--secondary-bg);
+}
+
+/* Dashboard Styling */
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+      flex-direction: column;
+      margin: 30px;
+  }
+}
+
+/* Body Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  transition: background var(--transition-speed);
+}
+
+/* Buttons */
+button {
+  background: var(--secondary-bg);
+  color: var(--text-color);
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+button:hover {
+  background: var(--hover-color);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+/* Card Styling */
+.card {
+  background: var(--secondary-bg);
+  color: var(--text-color);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+/* Header */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--secondary-bg);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Links */
+a {
+  color: var(--secondary-bg);
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--secondary-bg);
+  transition: width var(--transition-speed);
+  margin: auto;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* Loader */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--secondary-bg);
+  border-top: 5px solid var(--hover-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Gradient Background Animation */
+@keyframes gradientBackground {
+  0% {
+      background: linear-gradient(45deg, #040404, var(--secondary-bg));
+  }
+  50% {
+      background: linear-gradient(45deg, var(--secondary-bg), #040404);
+  }
+  100% {
+      background: linear-gradient(45deg, #040404, var(--secondary-bg));
+  }
+}
+
+/* Apply Gradient Background Dynamically */
+.bg-gradient {
+  animation: gradientBackground 8s infinite;
+}

@@ -1,0 +1,9 @@
+.title {
+    margin-top: 20px;
+    font-size: 54px;
+    font-weight: bold;
+    background: linear-gradient(to right,rgb(66, 66, 66), rgb(255, 255, 255), rgb(255, 255, 255), rgb(66, 66, 66)); /* Gradient from purple to pink */
+     /* Clip the background to the text */
+    color: black; /* Make the text color transparent so gradient shows through */
+    animation: slideDown 1s ease-in-out;
+  }

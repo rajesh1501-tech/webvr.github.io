@@ -1,0 +1,18 @@
+.logout-btn{
+    background-color: #ff0000;
+    height: 40px;
+    width: auto;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    margin-left: auto;
+  
+  }
+  .logout-btn:hover{
+    background-color: #e71414;
+    height: 40px;
+    width: auto;
+    text-align: center;
+    color: #ffffff;
+  
+  }

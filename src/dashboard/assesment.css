@@ -1,0 +1,128 @@
+/* Overall styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.max-w-3xl {
+  max-width: 36rem; /* Adjust as needed */
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #f8f9fa; /* Light gray background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered headings and text */
+.text-center {
+  text-align: center;
+}
+
+/* Headings */
+h1,
+h2 {
+  margin: 0 0 1rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.5rem; /* Adjust as needed */
+}
+
+h2 {
+  font-size: 1.25rem; /* Adjust as needed */
+}
+
+/* Paragraph text */
+p {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="radio"] {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* Label styles */
+label {
+  cursor: pointer;
+}
+
+/* Button styles (improves readability) */
+.block-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #307eec; /* Blue button color */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.block-btn:hover {
+  background-color: #2067c8; /* Darker blue on hover */
+}
+
+.block-btn:disabled {
+  background-color: #ddd;
+  cursor: default;
+}
+
+/* Form container styles */
+.bg-white {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Assessment content styles */
+.header {
+  margin-bottom: 1rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Result and score styles */
+.text-green-800,
+.text-red-800 {
+  color: #38a169; /* Green for pass, red for fail */
+}
+
+.bg-green-100,
+.bg-red-100 {
+  background-color: #f0fff4; /* Lighter green/red for result boxes */
+}
+
+.shadow-lg {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Time left styles */
+.text-red-500 {
+  color: #dc3545; /* Red for time remaining */
+}
